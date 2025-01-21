@@ -25,7 +25,7 @@ git branch [branch-name] <p> create a new branch at the current commit </p><br>
 git checkout [branch-name] <p> swithch to another branch and check it out into your working directory </p>
 git merge [branch] <p> merge the specified branch's history with the current one </p><br>
 git log <p> show all commits in the current branch's history </p>
-<h1> Share & Update <h1>
+<h1> Share & Update </h1>
 git remote add [alias] [url] <p> used to add an initiated git directory from your local system to a remote system. alias can be anything generally it is origin. url will be from a blank repository created in github.</p><br>
 git fetch [alias] <p>fetch down all the branches from that git remote</p><br>
 git merge [alias]/[branch] <p> merge a remote branch into your current branch to bring it up to date </p><br>
