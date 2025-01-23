@@ -25,7 +25,10 @@ git branch [branch-name] <p> create a new branch at the current commit </p><br>
 git checkout [branch-name] <p> swithch to another branch and check it out into your working directory </p>
 git merge [branch] <p> merge the specified branch's history with the current one </p><br>
 git branch -M [new branch name] <p> used to change the branch name of your current branch </p><br>
-git log <p> show all commits in the current branch's history </p>
+git branch -d [branch name] <p>used for deleting a branch except your current one. </p><br>
+git diff [branch name] <p> to compare commits between branches, files and more</p><br>
+<p>An another to method to merge is create pull requst for merge using github. which is used in industries </p><br>
+git log <p> show all commits in the current branch's history. press q to quit from log </p>
 <h1> Share & Update </h1>
 git remote add [alias] [url] <p> used to add an initiated git directory from your local system to a remote system. alias can be anything generally it is origin. url will be from a blank repository created in github.</p><br>
 git remote -v <p> To verify remote </p><br>
@@ -33,4 +36,9 @@ git fetch [alias] <p>fetch down all the branches from that git remote</p><br>
 git merge [alias]/[branch] <p> merge a remote branch into your current branch to bring it up to date </p><br>
 git push [alias] [branch] <p> transmit local branch commits to the remote repository branch </p><br>
 git push -u [alias] [branch] <p> -u will save your default alias and branch next you press git push it will take alias and branch without saying.<br>
-git pull <p> fetch and merge any commits from the tracking remote branch
+git pull <p> fetch and merge any commits from the tracking remote branch you can add alias and branch as well.</p><br>
+<h1> Rewrite History </h1>
+git reset [file name] <p>This command is used to reset from staged but not commited.<p><br>
+git reset HEAD~1 <p> This can be used to go back for 1 commit. </p><br>
+git reset [commit hash] <p> This will directly move back to that commit. has of commit can be found in log </p><br>
+git reset --hard [commit has] <p> this will move back to that commit and the code in vs code will also roll back at that commit, while in above the vs code retain it's codes</p><br>
